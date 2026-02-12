@@ -76,6 +76,114 @@
 
 // read up other strings method and number methods
 
+// naming in javascript
+// pascal case - FisrtName
+// camel case - firstName
+// snake case - first_name
+// uppercases - FIRSTNAME
+// lowercases - firstname
+
+
+ const firstName = "Edison"
+ const lastName = "Sime"
+
+
+
+// concatenation
+
+//  const fullName = `Hello i am ${firstName}, ${lastName}`
+
+//  const fullName = " Hello i am " + firstName + " " + lastName
+// console.log(fullName)
+
+
+// numbers
+// int -
+// float (decimal)
+
+ const number =  2;
+ const decimal = 2.267747;
+ console.log(typeof(decimal))
+ console.log(typeof(parseFloat(decimal)))
+ console.log(typeof(number))
+ console.log(typeof(parseInt(number)))+
+ console.log(typeof(decimal.toFixed(1)))
+ console.log(typeof(toString(number)))
+
+//  methods of number
+// parseFloat()
+
+// Parses the float value from the string.
+
+// 6	
+// parseInt()
+
+// Parses the integer value from the string.
+	
+// toFixed()
+// Formats a number with a specific number of digits to the right of the decimal.
+
+// 	
+// toString()
+
+// Returns the string representation of the number's value.
+
+// BODMAS- Bracket, order, division, mult, add, sub
+
+// cal a area of a circle 
+
+// area = length * width 
+
+ const length = 20;
+ const width = 10;
+
+ const area = length * width
+ console.log(`The area of a circle is ${area}`)
+
+//  conditional statement
+// if statement
+// else if statement
+// else
+// switch statement
+
+
+// conditional operator
+// ==	Equal	x == y
+// !=	Not Equal	x != y
+// ===	Strict equality (equal value and equal type)	x === y
+// !==	Strict inequality (not equal value or not equal type)	x !== y
+// >	Greater than	x > y
+// <	Less than	x < y<
+// >=	Greater than or Equal to	x >= y
+// <=	Less than or Equal to	x <= y
+
+
+// i want create a program that  will check if someone is an adult or a teenager
+// if is an adult
+// if is a teenager
+// not a human
+
+let Age = "18";
+const age = parseInt(Age)
+if (age === 18) {
+    console.log(`You are Up ${age} and you are an adult`)  
+}else if (age >= 18) {
+     console.log(`Your ${age}, you are not an adult`)  
+} else {
+     console.log(`You do not have any age`)  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
