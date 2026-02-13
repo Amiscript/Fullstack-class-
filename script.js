@@ -84,8 +84,8 @@
 // lowercases - firstname
 
 
- const firstName = "Edison"
- const lastName = "Sime"
+//  const firstName = "Edison"
+//  const lastName = "Sime"
 
 
 
@@ -101,14 +101,14 @@
 // int -
 // float (decimal)
 
- const number =  2;
- const decimal = 2.267747;
- console.log(typeof(decimal))
- console.log(typeof(parseFloat(decimal)))
- console.log(typeof(number))
- console.log(typeof(parseInt(number)))+
- console.log(typeof(decimal.toFixed(1)))
- console.log(typeof(toString(number)))
+//  const number =  2;
+//  const decimal = 2.267747;
+//  console.log(typeof(decimal))
+//  console.log(typeof(parseFloat(decimal)))
+//  console.log(typeof(number))
+//  console.log(typeof(parseInt(number)))+
+//  console.log(typeof(decimal.toFixed(1)))
+//  console.log(typeof(toString(number)))
 
 //  methods of number
 // parseFloat()
@@ -134,11 +134,11 @@
 
 // area = length * width 
 
- const length = 20;
- const width = 10;
+//  const length = 20;
+//  const width = 10;
 
- const area = length * width
- console.log(`The area of a circle is ${area}`)
+//  const area = length * width
+//  console.log(`The area of a circle is ${area}`)
 
 //  conditional statement
 // if statement
@@ -163,29 +163,106 @@
 // if is a teenager
 // not a human
 
-let Age = "18";
-const age = parseInt(Age)
-if (age === 18) {
-    console.log(`You are Up ${age} and you are an adult`)  
-}else if (age >= 18) {
-     console.log(`Your ${age}, you are not an adult`)  
-} else {
-     console.log(`You do not have any age`)  
-}
+// let Age = "18";
+// const age = parseInt(Age)
+// if (age === 18) {
+//     console.log(`You are Up ${age} and you are an adult`)  
+// }else if (age >= 18) {
+//      console.log(`Your ${age}, you are not an adult`)  
+// } else {
+//      console.log(`You do not have any age`)  
+// }
+
+// let score = "69.8"
+// const scores = parseFloat(score) 
+// console.log(typeof(scores.toFixed(0)))
+// // console.log(scores)
+
+// switch statement
+
+// key- expression
+// case - conditions
+// break- its means once that line code is executed stop the code.
+// default- 
+
+// write a program that indicates days of the week.
+// mondays - sundays
+
+// let days = "holiday"
+
+// switch (days, age) {
+//      case "Monday" : console.log("This is Monday")
+//           break; 
+//      case "Tuesday": console.log("This is Tuesday")
+//           break;
+//     case "Wednesday": console.log("This is Wednesday")
+//           break;
+//      case "Thursday": console.log("This is Thursday")
+//           break;
+//      case "Friday": console.log("This is Friday")
+//           break;
+//      case "Saturday": console.log("This is Saturday")
+//           break;
+//      case "Sunday": console.log("This is Sunday")
+//           break;
+//      default: console.log("None of the day is found")
+//           break;
+// }
+
+
+
+// loops in javascript
+// for loop
+// while loop
+
+// for ( initialization, condition, increment)
+// write a program that counts 1-10
+// increment ++, +2
+//decrement--
+ 
+// 1 - 1 + 1 = 2, 2+1= 3, 4,5,6,7,8,9,10
+
+// for (let count = 1; count <= 10; count++) {
+//  console.log(count)
+// }
+// // write a program thats print Hello world ten times
+// for(let print = 1; print <= 10; print++){
+//     console.log(`Hello World ${print}`)
+// }
+
+// while loop
+
+// let count = 1;
+// while (count <= 10) {
+//      console.log(count)
+//      count++
+// }
+
+// scope in javascript
+// local variable
+// global variable
+
+// Arrays 
+// Arrays- are collection of data.
+
+// const ArrayName = []
+// list fruits 
+
+const fruits = ["mango", "orange", "Apple", "grape"]
+
+
+// console.log(fruits.length)
+// console.log(fruits[2])
+
+const mixArray = ["Strings", 1, true, ['text', 2], {name:'bob'}]
+console.log(mixArray[0])
+console.log(mixArray[3][1])
+console.log(mixArray[4].name)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+// Arrays of Method
 
 
 
