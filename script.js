@@ -248,7 +248,8 @@
 // const ArrayName = []
 // list fruits 
 
-const fruits = ["mango", "orange", "Apple", "grape"]
+
+
 
 
 // console.log(fruits.length)
@@ -263,8 +264,41 @@ console.log(mixArray[4].name)
 
 
 // Arrays of Method
+const fruits = ["mango", "orange", "Apple", "grape"]
 
+//push() - its used to add one or more  elements to END  of an array
 
+fruits.push("banana")
+console.log(fruits)
 
+// pop() -Removes the last element from an array and returns that element.
+ 
+fruits.pop()
+console.log(fruits)
+
+// shift()- Removes the first element from an array and returns that element.
+fruits.shift()
+console.log(fruits)
+//unshift()- Inserts new elements at the start of an array, and returns the new length of the array.
+fruits.unshift("berry")
+console.log(fruits)
+// indexof
+
+console.log(fruits.indexOf("berry"))
+//length
+
+console.log(fruits.length)
+// join()
+console.log(fruits.join("-"))
+
+// sort()
+  console.log(fruits.sort())
+// reverse()
+
+console.log(fruits.reverse())
+//concate
+console.log(fruits.concat(mixArray))
+
+const numbers = [,2,3,4,5,7,9,10,50]
 
 
