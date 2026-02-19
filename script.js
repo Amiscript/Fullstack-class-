@@ -299,6 +299,103 @@ console.log(fruits.reverse())
 //concate
 console.log(fruits.concat(mixArray))
 
-const numbers = [,2,3,4,5,7,9,10,50]
+// const numbers = [,2,3,4,5,7,9,10,50]
+// numbers.unshift(1,6,8)
+// numbers.pop()
+// numbers.sort()
+// console.log(numbers)
+
+// 0bject in javascript
+// object- The JavaScript object is a non-primitive data type that is used to store data as key-value pairs. The key-value pairs are often referred as properties. A key in a key-value pair, also called a "property name", is a string and value can be anything. If a property's value is a function, the property is known as a method.
+
+// Objects are created using curly braces and each property is separated by a comma. Each property is written as property name followed by colon (:) followed by property value. The key: value pairs are not stored in the specific order in the object. So an object is an unordered collection of properties written as key: value pairs.
+
+  const students = { 
+   name:"Edison",
+   age:9,
+   isstudent:true,
+   subjects:['math', 'Eng', 'chem'],
+  
+}
+
+//  object methods
+
+//Access each property in an object
+console.log(students.name)
+console.log(students.subjects[1])
+
+// add to an object 
+students.gender = "male"
+console.log(students)
+
+// edit 
+students.age = 10
+console.log(students)
+
+// delete or remove
+ delete students.age
+ console.log(students)
 
 
+StudentArray = [
+  {
+    name:"Alice",
+    gender:"female",
+    age:9,
+    isstudent:true
+  }, 
+  {
+    name:"Edy",
+    gender:"male",
+    age:10,
+    isstudent:true
+  }, 
+    {
+    name:"Amos",
+    gender:"male",
+    age:12,
+    isstudent:true
+  }, 
+  {
+    name:"sarah",
+    gender:"female",
+    age:14,
+    isstudent:true
+  }, 
+    {
+    name:"Edward",
+    gender:"male",
+    age:9,
+    isstudent:true
+  }, 
+]
+
+// loop                           0 <  5            +
+// for (let names = 0; names < StudentArray.length; names++){
+//   console.log(StudentArray[names].age)
+// }
+
+//  for (let names = 0; names < StudentArray.length; names++){
+//   //  console.log(StudentArray[names].age)
+//     if (StudentArray[names].name === "sarah" ) {
+//   console.log(StudentArray[names])  
+// }
+
+// }
+
+
+StudentArray.push(
+   {
+    name:"love",
+    gender:"female",
+    age:11,
+    isstudent:true
+  }, 
+)
+
+console.log(StudentArray)
+
+//read
+// for in
+// for of
+// functions 
