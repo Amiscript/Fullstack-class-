@@ -337,38 +337,38 @@ console.log(students)
  console.log(students)
 
 
-StudentArray = [
-  {
-    name:"Alice",
-    gender:"female",
-    age:9,
-    isstudent:true
-  }, 
-  {
-    name:"Edy",
-    gender:"male",
-    age:10,
-    isstudent:true
-  }, 
-    {
-    name:"Amos",
-    gender:"male",
-    age:12,
-    isstudent:true
-  }, 
-  {
-    name:"sarah",
-    gender:"female",
-    age:14,
-    isstudent:true
-  }, 
-    {
-    name:"Edward",
-    gender:"male",
-    age:9,
-    isstudent:true
-  }, 
-]
+// StudentArray = [
+//   {
+//     name:"Alice",
+//     gender:"female",
+//     age:9,
+//     isstudent:true
+//   }, 
+//   {
+//     name:"Edy",
+//     gender:"male",
+//     age:10,
+//     isstudent:true
+//   }, 
+//     {
+//     name:"Amos",
+//     gender:"male",
+//     age:12,
+//     isstudent:true
+//   }, 
+//   {
+//     name:"sarah",
+//     gender:"female",
+//     age:14,
+//     isstudent:true
+//   }, 
+//     {
+//     name:"Edward",
+//     gender:"male",
+//     age:9,
+//     isstudent:true
+//   }, 
+// ]
 
 // loop                           0 <  5            +
 // for (let names = 0; names < StudentArray.length; names++){
@@ -384,18 +384,86 @@ StudentArray = [
 // }
 
 
-StudentArray.push(
-   {
-    name:"love",
-    gender:"female",
-    age:11,
-    isstudent:true
-  }, 
-)
+// StudentArray.push(
+//    {
+//     name:"love",
+//     gender:"female",
+//     age:11,
+//     isstudent:true
+//   }, 
+// )
 
-console.log(StudentArray)
+// console.log(StudentArray)
 
-//read
+
 // for in
 // for of
+// object destructuring 
+// array destructuring
+// spread operator
 // functions 
+
+
+// const profile = {  for an object it loop through the keys 
+//     name:"Edward",
+//     gender:"male",
+//     age:9,
+//     isstudent:true
+//   }
+
+const profile = ['Edward', 'male'] // loop through using index number
+
+// const dep = [{
+//     name:"love",
+//     gender:"female",
+//     age:11,
+//     isstudent:true
+//   },
+//   {
+//     name:"love",
+//     gender:"female",
+//     age:11,
+//     isstudent:true
+//   },
+//  ]
+
+const dep = 'Edison' // string
+
+
+for (const value in dep) {
+  console.log(value,dep[value])
+  
+}
+
+
+// for of loop is used to loop through the  values of an array, string
+
+for (const values of dep) {
+  console.log(values)
+  
+}
+
+// object destructuring 
+
+  const pupil= {
+     name:"sarah",
+    gender:"female",
+    age:14,
+    isstudent:true
+  }
+
+  // keys
+  // const{name:firstName, gender, age, isstudent} = pupil
+
+// values 
+  //  const{name, gender, age, isstudent} = {name:"joe", gener:"male"}
+  // console.log(name)
+  
+// spread operator ... cloning 
+//  const{name, ...details} = pupil
+//   console.log(name, details)
+
+//  const{...details} = pupil
+//   console.log(details)
+
+
