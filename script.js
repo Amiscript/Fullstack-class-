@@ -445,12 +445,30 @@ for (const values of dep) {
 
 // object destructuring 
 
-  const pupil= {
-     name:"sarah",
-    gender:"female",
-    age:14,
-    isstudent:true
-  }
+// const data = fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then(response => response.json())  
+
+//   const{name, gender, age, isstudent, ...details} = data
+
+//   console.log(data.name);
+
+//   if (data.name === "Leanne Graham") {
+//     console.log("Found the correct user!");
+//   }
+
+  // json- javascript object notation - its a format for storing and transporting data. It is often used when data is sent from a server to a web page. JSON is "self-describing" and easy to understand. It is also language independent, with parsers available for many languages.
+
+  // CRUD- create, read, update, delete 
+
+  // const pupil = {
+  //   "name":"sarah",
+  //   "gender":"female",
+  //   "age":14,
+  //   "isstudent":true
+
+  // }
+
+
 
   // keys
   // const{name:firstName, gender, age, isstudent} = pupil
@@ -467,3 +485,133 @@ for (const values of dep) {
 //   console.log(details)
 
 
+// function in javascript is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+// function name(params) {
+  
+// }
+
+// function greet() {
+//   console.log("Hello World")
+// }
+
+//calling a function
+// execute the function
+// invoke the function
+//run the function
+
+// greet()
+
+// function declaration- a function declaration is when a function is defined using the function keyword followed by the function name and parentheses. Function declarations are hoisted, which means they can be called before they are defined in the code.
+
+// greet()
+
+// function greet() {
+//   console.log("Hello World")
+// }
+
+
+// function expression - a function expression is when a function is assigned to a variable. Function expressions can be anonymous (without a name) or named. They are not hoisted, which means they cannot be called before they are defined in the code.
+
+// greet() // this will give an error because function expression is not hoisted/
+
+// const greet = function() {
+//   console.log("Hello World")
+// }
+
+//   greet()
+
+
+// arrow function- an arrow function is a concise way to write a function expression. It uses the => syntax and does not have its own this, arguments, super, or new.target. Arrow functions are always anonymous and cannot be used as constructors.
+
+// const  greet = () => {
+//   console.log("Hello World")
+// }
+
+// const greet = () => console.log("Hello World")- one line arrow function
+// greet()
+
+//parameters- are the names listed in the function definition. They act as placeholders for the values that will be passed to the function when it is called.
+
+// function greet(name) {
+//   console.log(`Hello ${name}`)
+// }
+
+// greet("Edison")
+
+// function add(a, b) {
+//   console.log(a + b);
+
+// }
+
+// arguments- are the actual values that are passed to the function when it is called. They are assigned to the corresponding parameters in the function definition.
+
+// add(4, 5)
+
+// return statement- is used to specify the value that a function should return when it is called. It is used to exit a function and return a value to the caller.
+
+// function add(c, d) {
+//   return c + d;
+// }
+
+// const sum = add(4, 5)
+// console.log(sum)
+
+// pupil = {
+//   name:"sarah",  
+//   gender:"female",
+//   age:14,
+//   isstudent:true
+// }
+
+// function displayname(pupil) {
+//   console.log(pupil.name);
+// }
+
+// displayname(pupil)
+
+// const{name, gender , age, isstudent} = pupil
+
+// function displayname({name, gender, age, isstudent}) {
+
+//    if (isstudent === false) {
+//     console.log(`Hello ${name}, you are a ${age} year old ${gender} student.`)
+//    }
+//     else {  
+//     console.log(`Hello ${name}, you are a ${age} year old ${gender} not a student.`)
+//    }
+// }
+
+// displayname(pupil)
+
+
+const people = [
+  {
+    name:"sarah",
+    gender:"female",
+    age:14,
+    isstudent:true
+  },
+  {
+    name:"john",
+    gender:"male",
+    age:15,
+    isstudent:false
+  },
+  {
+    name:"jane",
+    gender:"female",
+    age:16,
+    isstudent:true
+  }
+]
+
+// function displayinfo([sarah, john, jane]) {
+//   console.log(`Hello ${sarah.name}, you are a ${sarah.age} year old ${sarah.gender} student.`)
+
+// }
+// displayinfo(people)
+
+// assisgnment
+
+// write a function that takes an array of objects and display the name and age of each person in the array. If the person is a student, display "Hello [name], you are a [age] year old student." If the person is not a student, display "Hello [name], you are a [age] year old not a student." Use object destructuring to extract the properties from each object in the array. Use template literals to format the output string. Use a loop to iterate through the array of objects and call the function for each object.
