@@ -585,7 +585,7 @@ for (const values of dep) {
 // displayname(pupil)
 
 
-const people = [
+const party = [
   {
     name:"sarah",
     gender:"female",
@@ -606,6 +606,9 @@ const people = [
   }
 ]
 
+
+
+
 // function displayinfo([sarah, john, jane]) {
 //   console.log(`Hello ${sarah.name}, you are a ${sarah.age} year old ${sarah.gender} student.`)
 
@@ -615,3 +618,126 @@ const people = [
 // assisgnment
 
 // write a function that takes an array of objects and display the name and age of each person in the array. If the person is a student, display "Hello [name], you are a [age] year old student." If the person is not a student, display "Hello [name], you are a [age] year old not a student." Use object destructuring to extract the properties from each object in the array. Use template literals to format the output string. Use a loop to iterate through the array of objects and call the function for each object.
+
+
+// function displayinfo(people) {
+//   for (let person of people) {
+//     const {name, age, isstudent} = person
+//     if (isstudent === true) {
+//         console.log(`Hello ${name}, you are a ${age} year old student.`)}
+//     // } else {
+//     //   console.log(`Hello ${name}, you are a ${age} year old not a student.`)
+//     // }
+//   } 
+// }
+
+// displayinfo(people)
+
+// function displayinfo(people) {
+//   const [student1, student2, student3] = people
+
+//   if (student1.isstudent === true) {
+//     console.log(`Hello ${student1.name}, you are a ${student1.age} year old student.`)
+//   }
+//   if (student2.isstudent === false) {
+//     console.log(`Hello ${student2.name}, you are a ${student2.age} year old not a student.`)
+//   }
+//   if (student3.isstudent === true) {
+//     console.log(`Hello ${student3.name}, you are a ${student3.age} year old student.`)
+//   }
+
+// }
+
+// displayinfo(people)
+
+
+
+const people = [
+  {
+    name:"sarah",
+    gender:"female",
+    age:14,
+    isstudent:true
+  },
+  {
+    name:"john",
+    gender:"male",
+    age:15,
+    isstudent:false
+  },
+  {
+    name:"jane",
+    gender:"female",
+    age:16,
+    isstudent:true
+  }
+] 
+
+//  function inside a function - a function that is defined inside another function is called a nested function or an inner function. The inner function has access to the variables and parameters of the outer function, and can also access the global scope. The inner function can be used to perform a specific task that is related to the outer function, and can also be returned as a value from the outer function.
+
+// function displayinfo(people) {
+//   function displayperson(person) {
+//     const {name, age, isstudent} = person
+//     if (isstudent === true) {
+//         console.log(`Hello ${name}, you are a ${age} year old student.`)}
+//     else {
+//       console.log(`Hello ${name}, you are a ${age} year old not a student.`)
+//     }   
+//   }
+//   for (let person of people) {
+//     displayperson(person)
+//   } 
+// }
+
+// displayinfo(people)
+
+
+// as parameter and callback function- a callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. The callback function can be used to perform a specific task after the main function has finished executing, such as handling the result of an asynchronous operation or performing additional processing on the data. Callback functions are commonly used in JavaScript for handling events, making API calls, and working with asynchronous code.
+
+
+// function displayperson(person) {
+//   const {name, age, isstudent} = person
+//   if (isstudent === true) {
+//       console.log(`Hello ${name}, you are a ${age} year old student.`)}
+//   else {
+//     console.log(`Hello ${name}, you are a ${age} year old not a student.`)
+//   }   
+// }
+
+
+// function displayinfo(people, displayperson) {
+//   for (let person of people) {
+//     displayperson(person)
+//   } 
+// }
+
+// displayinfo(people, displayperson)
+
+
+// callback function- a callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. The callback function can be used to perform a specific task after the main function has finished executing, such as handling the result of an asynchronous operation or performing additional processing on the data. Callback functions are commonly used in JavaScript for handling events, making API calls, and working with asynchronous code.
+
+
+
+// function displayperson(person) {
+//   const {name, age, isstudent} = person         
+//   if (isstudent === true) {
+//       console.log(`Hello ${name}, you are a ${age} year old student.`)}
+//   else {
+//     console.log(`Hello ${name}, you are a ${age} year old not a student.`)
+//   }   
+// }
+
+
+
+
+// function displayinfo(a, b) {
+//   for (let person of a) {
+//     b(person)
+//   }   
+// }
+
+// displayinfo(party, displayperson)
+
+
+// assignment
+// write a function that calculate the area of a circle. The function should take the radius as a parameter and return the area of the circle. Use the formula A = πr^2, where A is the area, π is a constant (approximately 3.14), and r is the radius of the circle. Use a callback function to display the result in the console.
