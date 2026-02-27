@@ -652,26 +652,26 @@ const party = [
 
 
 
-const people = [
-  {
-    name:"sarah",
-    gender:"female",
-    age:14,
-    isstudent:true
-  },
-  {
-    name:"john",
-    gender:"male",
-    age:15,
-    isstudent:false
-  },
-  {
-    name:"jane",
-    gender:"female",
-    age:16,
-    isstudent:true
-  }
-] 
+// const people = [
+//   {
+//     name:"sarah",
+//     gender:"female",
+//     age:14,
+//     isstudent:true
+//   },
+//   {
+//     name:"john",
+//     gender:"male",
+//     age:15,
+//     isstudent:false
+//   },
+//   {
+//     name:"jane",
+//     gender:"female",
+//     age:16,
+//     isstudent:true
+//   }
+// ] 
 
 //  function inside a function - a function that is defined inside another function is called a nested function or an inner function. The inner function has access to the variables and parameters of the outer function, and can also access the global scope. The inner function can be used to perform a specific task that is related to the outer function, and can also be returned as a value from the outer function.
 
@@ -741,3 +741,80 @@ const people = [
 
 // assignment
 // write a function that calculate the area of a circle. The function should take the radius as a parameter and return the area of the circle. Use the formula A = πr^2, where A is the area, π is a constant (approximately 3.14), and r is the radius of the circle. Use a callback function to display the result in the console.
+
+
+
+// function calculateArea(radius, callback) {
+//   const area = 3.14 * radius * radius
+//   callback(area)
+// }     
+
+// function displayArea(area) {
+//   console.log(`The area of the circle is ${area}`)
+// }
+// calculateArea(5, displayArea)
+
+
+const people = [
+  {
+    name:"sarah",
+    gender:"female",
+    age:14,
+    isstudent:true,
+    country:"Nigeria"
+  },
+  {
+    name:"john",
+    gender:"male",
+    age:15,
+    isstudent:false,
+    country:"Ghana"
+  },
+  {
+    name:"jane",
+    gender:"female",
+    age:16,
+    isstudent:true,
+    country:"Kenya"
+  }
+] 
+
+
+// Advance array method
+// 1. forEach() - executes a provided function once for each array element.
+
+//  people.forEach(function(person) {
+//  console.log(person);
+//  })
+
+// people.forEach((person) => {
+//   // console.log(person.name)  
+//   if (person.country === "Nigeria") {
+//     console.log(person);
+//   }
+// })
+
+function selectcountry() {
+  people.forEach((person) => {
+  // console.log(person.name)  
+  if (person.country === "Nigeria") {
+    console.log(person);
+  }
+})
+}
+ selectcountry()
+
+
+
+
+// 2. map() - creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+
+
+
+// 3. filter() - creates a new array with all elements that pass the test implemented by the provided function.
+// 4. reduce() - executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+// 5. find() - returns the value of the first element in the provided array that satisfies the provided testing function. Otherwise undefined is returned.
+// 6. some() - tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+// 7. every() - tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+// 8. sort() - sorts the elements of an array in place and returns the sorted array.
