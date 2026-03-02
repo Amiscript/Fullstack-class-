@@ -808,13 +808,104 @@ function selectcountry() {
 
 
 // 2. map() - creates a new array populated with the results of calling a provided function on every element in the calling array.
+//numbers
+const list = [1,2,3,4,5,6]
+ const l = list.map(function(params) {
+  return params * 2
+})
+ console.log(l);
 
-
-
+ // strings
+ const items =["john", "kelly", "lilly"] 
+ const i = items.map((item)=>{
+     return item.toUpperCase()
+ })
+ 
+ console.log(i);
 
 // 3. filter() - creates a new array with all elements that pass the test implemented by the provided function.
+  // const f = items.filter((fill)=>{
+  //   if(fill.includes("l")){
+  //     return fill
+  //   }
+  // })
+
+  //  console.log(f);
+
+
+ const  R= list.filter((even)=>{
+      if(even  % 2 === 0){
+        return even
+      }
+  })
+ console.log(R);
+
+
 // 4. reduce() - executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+        // const list = [1,2,3,4,5,6]
+          //             1 = 1 + 2 =3
+          //             3 = 3 + 3 = 6
+          //             6  = 6 + 4 = 10
+          //             10 = 10 + 5 = 15
+          //             15 = 15 + 6 = 21
+
+const sum = list.reduce((currentvalue, nextvalue)=>{
+    return currentvalue + nextvalue
+})
+
+console.log(sum);
+
+
+const k = items.reduce((c, n)=>{
+   return c + n
+})
+
+console.log(k);
+
+
+
+
+
 // 5. find() - returns the value of the first element in the provided array that satisfies the provided testing function. Otherwise undefined is returned.
+
+// const p = people.find((s)=>{
+//    if(s.gender === 'female'){
+//     return s
+//    }
+// })
+//  console.log(p);
+
 // 6. some() - tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+
+// const p = people.some((s)=>{
+//    if(s.gender === 'male'){
+//     return s
+//    }
+// })
+//  console.log(p);
+
+
+
 // 7. every() - tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+const p = people.every((s)=>{
+   if(s.country === 'Nigeria'){
+    return s
+   }
+})
+ console.log(p);
+
+
 // 8. sort() - sorts the elements of an array in place and returns the sorted array.
+
+const sortItem = [1,3,4,6,8,10,20]
+const t = sortItem.sort((a,b)=>{
+ return a+b
+})
+console.log(t);
+
+
+
+// assignment
+// write a function that takes an array of objects and display the name and age of each person in the array. If the person is a student, display "Hello [name], you are a [age] year old student." If the person is not a student, display "Hello [name], you are a [age] year old not a student." Use object destructuring to extract the properties from each object in the array. Use template literals to format the output string. 
