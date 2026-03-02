@@ -909,3 +909,8 @@ console.log(t);
 
 // assignment
 // write a function that takes an array of objects and display the name and age of each person in the array. If the person is a student, display "Hello [name], you are a [age] year old student." If the person is not a student, display "Hello [name], you are a [age] year old not a student." Use object destructuring to extract the properties from each object in the array. Use template literals to format the output string. 
+
+// Date function
+// settimeout
+//setinterval
+// DOM
