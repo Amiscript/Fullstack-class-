@@ -911,6 +911,65 @@ console.log(t);
 // write a function that takes an array of objects and display the name and age of each person in the array. If the person is a student, display "Hello [name], you are a [age] year old student." If the person is not a student, display "Hello [name], you are a [age] year old not a student." Use object destructuring to extract the properties from each object in the array. Use template literals to format the output string. 
 
 // Date function
-// settimeout
-//setinterval
+ // new Date()
+
+//   new Date()
+// console.log(new Date())
+
+// days Sun - Mon = 0-6
+// months jan - dec = 0 - 11
+// hours - 1-23
+
+// const date = new Date()
+
+// const days = date.getDay() + 1
+// const months = date.getMonth() + 1
+// const year = date.getFullYear()
+// const time = date.getHours()
+// const local = date.toDateString()
+// const format2 = date.toLocaleString()
+// console.log(format2)
+
+// const DOB = new Date("1985-7-10")
+// const today = new Date()
+
+// let age  = today.getFullYear() - DOB.getFullYear()
+// console.log(age)
+
+// 1 seconds = 1000 millesecond
+
+// setTimeout(function, delay) - this function will execute at the exact time given to it
+//  setTimeout(()=>{
+//   const DOB = new Date("1985-7-10")
+// const today = new Date()
+// let age  = today.getFullYear() - DOB.getFullYear()
+// console.log(age)
+//  },6000)
+
+
+//setinterval(function, interval) - this function will execute repeatedly at exact time interval given to it
+
+// setInterval(()=>{
+//     const DOB = new Date("1992-7-10")
+// const today = new Date()
+// let age  = today.getFullYear() - DOB.getFullYear()
+// console.log(age)
+
+// }, 6000)
+
+
+//clearinterval
+  const clear = setInterval(()=>{
+    const DOB = new Date("1992-7-10")
+const today = new Date()
+let age  = today.getFullYear() - DOB.getFullYear()
+console.log(age)
+},6000)
+
+setTimeout(()=>{
+clearInterval(clear)
+console.log("this is cleared")
+},8000)
+
+
 // DOM
