@@ -973,3 +973,62 @@ console.log("this is cleared")
 
 
 // DOM
+// Document  Object Module 
+
+// console.log(document)
+// console.log(document.title)
+// console.log(document.body)
+
+
+//Dom Selectors
+// getElementByTagName
+//  console.log(document.getElementsByTagName("h1"))
+  const byTag = document.getElementsByTagName("h1")
+   console.log(byTag)
+// getElementid
+
+const byid = document.getElementById("id")
+console.log(byid)
+// getElementClassName
+
+const byclass = document.getElementsByClassName("Hi")
+console.log(byclass)
+// querySelector
+const qtag = document.querySelector("h1")
+console.log(qtag)
+
+// const qid = document.querySelector("#id")
+// console.log(qid)
+
+const qclass = document.querySelector(".Hi")
+console.log(qclass)
+
+// querySelectorAll
+const allh1= document.querySelectorAll("h1");
+console.log(allh1)
+
+
+// innerText - this gives us access to the text
+
+// const qid = document.querySelector("#id");
+//  const text = qid.innerText 
+//  console.log(text.length)
+
+
+// innerHtml - this access the html element
+
+// const qid = document.querySelector("#id");
+//  const text = qid.innerHTML
+//  console.log(text)
+
+// TextContent
+// const qid = document.querySelector("#id");
+//  const text = qid.textContent
+//  console.log(text)
+
+
+// const upper = document.querySelector(".Hi");
+// const up = upper.innerHTML.toUpperCase()
+// console.log(up)
+
+
