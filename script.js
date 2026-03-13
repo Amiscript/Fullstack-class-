@@ -1064,5 +1064,118 @@
   // console.log(ul.children)
   // console.log(ul.children[0].innerHTML="bread")
 
-// creatElement
-//append()
+// creatElement - it create new element inside the javascript
+ 
+// const p = document.createElement("p")
+// p.textContent = "Hello"
+// console.log(p)
+
+// const a = document.createElement("a")
+// const app = a.href = "www.facebook.com"
+// console.log(a)
+
+
+
+//append()- add this element to the body
+
+// const body = document.querySelector("body")
+
+// body.append(p)
+// body.append(app)
+
+
+// appendChild() -- 
+
+// const ul = document.querySelector("ul")
+// const li = document.createElement("li")
+// li.textContent = "Rice"
+// ul.appendChild(li)
+
+
+// const fruits =["apple", "orange","grape", "berry", "banana"]
+// const ul = document.querySelector("ul")
+// fruits.forEach((fruit)=>{
+// const li = document.createElement("li")
+// li.textContent = fruit
+// ul.appendChild(li)
+// })
+
+
+//remove() - remove  all element from the body
+
+
+// const body = document.querySelector("body")
+// const p = document.querySelector("p")
+
+// body.remove()
+
+
+
+// removeChild() - remove element from another element
+
+// body.removeChild(p)
+
+//eventlistener
+// const button = document.querySelector("button")
+
+// click,	- Fires when an element is clicked
+//  button.addEventListener("click", ()=>{
+//   console.log('Hi am  a click function ')
+//  }
+
+
+// dblclick	Fires when an element is double-clicked
+//  button.addEventListener("dblclick", ()=>{
+//   console.log('Hi am a double click  function ')
+//  })
+
+
+
+// mousedown	Fires when mouse button is pressed down
+
+//  button.addEventListener("mousedown", ()=>{
+//   console.log('Hi am  a click function ')
+//  })
+
+
+// mouseup	Fires when mouse button is released
+// mousemove	Fires when mouse moves over an element
+// mouseover	Fires when mouse enters an element
+// mouseout	Fires when mouse leaves an element
+// mouseenter	Fires when mouse enters an element (doesn't bubble)
+// mouseleave	Fires when mouse leaves an element (doesn't bubble)
+// contextmenu	Fires when right-click happens
+// keydown	Fires when a key is pressed down
+// keyup	Fires when a key is released
+// keypress	Fires when a key that produces a character is pressed (deprecated)
+
+// To do list
+
+const input = document.querySelector(".input")
+const button = document.querySelector(".add")
+const ul = document.querySelector(".list")
+
+
+button.addEventListener("click", ()=>{
+
+const li = document.createElement("li")
+li.textContent = input.value
+
+ul.append(li)
+
+const deletebtn = document.createElement("button")
+deletebtn.textContent ="Delete"
+
+deletebtn.addEventListener("click", ()=>{
+  li.remove()
+})
+
+li.append(deletebtn)
+
+
+})
+
+// assigment make picture gallery
+
+//json 
+//storage
