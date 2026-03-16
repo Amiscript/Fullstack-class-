@@ -1151,31 +1151,96 @@
 
 // To do list
 
-const input = document.querySelector(".input")
-const button = document.querySelector(".add")
-const ul = document.querySelector(".list")
+// const input = document.querySelector(".input")
+// const button = document.querySelector(".add")
+// const ul = document.querySelector(".list")
 
 
-button.addEventListener("click", ()=>{
+// button.addEventListener("click", ()=>{
 
-const li = document.createElement("li")
-li.textContent = input.value
+// const li = document.createElement("li")
+// li.textContent = input.value
 
-ul.append(li)
+// ul.append(li)
 
-const deletebtn = document.createElement("button")
-deletebtn.textContent ="Delete"
+// const deletebtn = document.createElement("button")
+// deletebtn.textContent ="Delete"
 
-deletebtn.addEventListener("click", ()=>{
-  li.remove()
-})
+// deletebtn.addEventListener("click", ()=>{
+//   li.remove()
+// })
 
-li.append(deletebtn)
+// li.append(deletebtn)
 
 
-})
+// })
 
 // assigment make picture gallery
 
-//json 
+const input = document.querySelector(".file")
+console.log(input)
+const button = document.querySelector(".add")
+const remove = document.querySelector(".remove")
+
+const gallery = document.querySelector(".gallery")
+
+
+button.addEventListener("click", ()=>{
+  const files = input.files
+  for (let i = 0; i < files.length; i++) {
+       const img = document.createElement("img");
+       img.src = URL.createObjectURL(files[i])
+       gallery.append(img)
+//  remove.addEventListener("click", ()=>{
+//   gallery.remove(img)
+// })
+
+  }
+})
+
+
+
+
+
+//json - javascript object notation, this is a format in which information or data is saved on our database
+
+// Object
+
+// person = {
+//   name:" john",
+//   age:23,
+// }
+
+
+
+
+// convert json
+//JSON.stringnify- to convert from object to json format for we to save on a our database or localstorage
+
+// person = {
+//   name:" john",
+//   age:23,
+// }
+// const string = JSON.stringify(person)
+// console.log(string)
+
+
+
+//JSON.parse()- convert  from json to object 
+
+//  JSON.parse( )
+
+
+
 //storage
+// localStorage- is a brower storage system thats saves data permanently in the user's browser
+
+
+// localStorage.setItem(key, value)- to save to in the localstorage
+ person = {
+  name:" john",
+  age:23
+}
+localStorage.setItem('user',JSON.stringify(person))
+
+// localStorage.setItem("persondata", JSON.stringify(person))
