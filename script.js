@@ -1191,12 +1191,16 @@ button.addEventListener("click", ()=>{
        const img = document.createElement("img");
        img.src = URL.createObjectURL(files[i])
        gallery.append(img)
+       localStorage.setItem("user", img)
+       const saved = localStorage.getItem("user")
+       gallery.append(saved)
+       localStorage.clear()
 //  remove.addEventListener("click", ()=>{
 //   gallery.remove(img)
 // })
-
-  }
+}
 })
+
 
 
 
@@ -1237,10 +1241,75 @@ button.addEventListener("click", ()=>{
 
 
 // localStorage.setItem(key, value)- to save to in the localstorage
- person = {
-  name:" john",
-  age:23
-}
-localStorage.setItem('user',JSON.stringify(person))
+
+// setItem(key , value) -- save the data on the localstorage, key and value
+
+//  person = {
+//   name:" john",
+//   age:23,
+//   gender:"male"
+// }
+
+// const convertToJson = JSON.stringify(person)
+// console.log(convertToJson)
+
+// localStorage.setItem("info",convertToJson)
+
+
+
+// getItem (key) -- retrieving from storage(localstorage)
+
+// const get = localStorage.getItem("user")
+// //  console.log(get)
+// const convertToObject =  JSON.parse(get)
+// console.log(convertToObject)
+
+
+// removeItem(key)- remove from 
+//  localStorage.removeItem("user") // is individuall 
+//  localStorage.clear()// all
+
+
 
 // localStorage.setItem("persondata", JSON.stringify(person))
+
+
+// const store = JSON.parse(localStorage.getItem("user"))
+// console.log(store)
+
+// localStorage.removeItem("user")
+
+
+// sessionStorage - stores item temporarly, when close the browers everything goes off
+
+students ={
+  email:"student@gamil.com",
+  matNo:"U2026001",
+  phoneNumber:8094903843,
+  isStudent:true
+}
+//setItem(key, value)- save to session storage
+const convertToJson = JSON.stringify(students) 
+const savedss = sessionStorage.setItem("user", convertToJson);
+console.log(savedss);
+
+// getItem(key)- get item from session storage
+
+
+const getSS = sessionStorage.getItem("user")
+const covertToObject = JSON.parse(getSS)
+console.log(covertToObject);
+
+
+// removeItem(key)
+ sessionStorage.removeItem("user")
+
+//clear
+
+// sessionStorage.clear()
+
+
+
+
+
+
