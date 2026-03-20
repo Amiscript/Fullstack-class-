@@ -1309,7 +1309,29 @@ console.log(covertToObject);
 // sessionStorage.clear()
 
 
+// counter app
 
+const counter = document.querySelector(".count")
+const increase =document.querySelector(".add")
+console.log(increase);
+const reset = document.querySelector(".set")
+const decrease = document.querySelector(".sub")
 
+let count = 0
 
+increase.addEventListener("click", ()=>{
+ count++
+ counter.textContent = count
+
+})
+
+decrease.addEventListener("click", ()=>{
+  count--
+  counter.textContent = count
+})
+
+reset.addEventListener("click", ()=>{
+  count=0
+  counter.textContent= count
+})
 

@@ -1,3 +1,37 @@
 #gallery img{
    width: 100px;
 }
+
+.button{
+   display: flex;
+}
+button{
+   border-radius: 10px;
+   padding: 5px;
+  
+}
+ .increase{
+  border: 2px solid green;
+   }
+.decrease{
+   border: 2px solid red;
+}
+
+.reset{
+   border: 2px solid gray;
+}
+
+.count{
+   margin-left: 100px;
+   color: white;
+}
+.title{
+      margin-left: 50px;
+      color: white;
+}
+main{
+   height: 200px;
+   width: 200px;
+   background-color: rgb(99, 99, 23);
+   border-radius: 20px;
+}
